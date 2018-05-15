@@ -40,16 +40,16 @@ void preOrdem(Node *n){
 
 void emOrdem(Node *n){
     if(!n) return;
-    preOrdem(n->esq);
-    printf("%d", n->chave);                                             // imprime uma árvore em ordem
-    preOrdem(n->dir);
+    emOrdem(n->esq);
+    printf(" %d", n->chave);                                             // imprime uma árvore em ordem
+    emOrdem(n->dir);
 }
 
 void posOrdem(Node *n){
     if(!n) return;
-    preOrdem(n->esq);
-    preOrdem(n->dir);
-    printf("%d", n->chave);                                             // imprime uma árvore em pós-ordem
+    posOrdem(n->esq);
+    posOrdem(n->dir);
+    printf(" %d", n->chave);                                             // imprime uma árvore em pós-ordem
 }
 
 Node *buscaMenor(Node *n){
