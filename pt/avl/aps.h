@@ -24,7 +24,7 @@ void cabecalho(){
     puts("   d8888888888 888        Y88b  d88P      ");
     puts("  d88P     888 888         'Y8888P'       ");
     puts("");
-    puts(" ----------- Arvores AVL -----------");
+    puts(" ───────────┤ Arvores AVL ├──────────");
     puts("");
 }
 
