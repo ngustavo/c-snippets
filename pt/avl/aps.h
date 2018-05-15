@@ -50,8 +50,9 @@ int menu() {
             printf("\nInsira a chave a ser excluida: ");
             scanf("%d", &val);
             if(!excluirElemento(&arvore, val))
-                printf("\nErro ao excluir %d.", val);
-            printf("\nChave %d excluida.\n", val);
+                printf("\nChave %d nao encontrada.\n", val);
+            else
+                printf("\nChave %d excluida.\n", val);
             return 1;
             
         case 3:
