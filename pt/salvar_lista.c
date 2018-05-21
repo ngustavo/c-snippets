@@ -20,9 +20,9 @@ void inserir(int id, char nome[TAM]){
 	tLista *aux;
 	aux = (tLista*)malloc(sizeof(tLista));
 	aux->id = id;
-    aux->nome = nome;
-    //strncpy(aux->nome, nome, TAM);
-    aux->prox = head;
+	aux->nome = nome;
+	//strncpy(aux->nome, nome, TAM);
+	aux->prox = head;
 	head = aux;
 	puts("Elemento inserido na lista.");
 }
