@@ -92,7 +92,7 @@ int menu() {
             printf("\n[BONUS] Pre-Ordem em 2D\n\n");
             exibir2D(arvore);
             printf("\n\nExcluindo a chave %d...\n", arvore->esq->chave);
-            excluirElemento(&arvore, 28);
+            excluirElemento(&arvore, arvore->esq->chave);
             printf("\n[BONUS] Pre-Ordem em 2D:\n\n");
             exibir2D(arvore);
             puts("");
