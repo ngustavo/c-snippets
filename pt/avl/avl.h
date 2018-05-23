@@ -161,7 +161,8 @@ int excluirElemento(Node **n, int chave){
             Node *aux = buscaMenor((*n)->dir);                          // se tiver dois filhos, o menor da direita será o novo pai
             (*n)->chave = aux->chave;
             excluirElemento(&(*n)->dir, (*n)->chave);
-            if(alturaArvore((*n)->dir) - alturaArvore((*n)->esq) == 2){
+            int alt = alturaArvore((*n)->dir) - alturaArvore((*n)->esq);
+            if(alt == 2 || alt == -2){
                 if(alturaArvore((*n)->esq->dir) <= alturaArvore((*n)->esq->esq))
                     *n = rotacionarDireita(*n);
                 else
